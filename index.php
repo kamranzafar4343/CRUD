@@ -7,9 +7,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
-
 <body>
-
     <div class="container my-5">
 
         <h2>List of Clients</h2>
@@ -20,7 +18,6 @@
 
             <thead>
                 <tr>
-
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
@@ -48,7 +45,7 @@
                     die("Connection Error:" . $connection->connect_error);
                 }
 
-                //read all data from database table
+                //read data from database table
                 $sql = "SELECT * FROM clients";
                 $result = $connection->query($sql);
 
@@ -76,22 +73,9 @@
                   </td>
                 ";
                 }
-
-
-
-
                 ?>
-
-
-
-
-
             </tbody>
-
-
         </table>
     </div>
-
 </body>
-
 </html>
